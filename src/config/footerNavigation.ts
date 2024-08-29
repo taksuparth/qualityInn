@@ -27,21 +27,27 @@ export interface SubFooter {
 	copywriteText: string
 }
 
+export interface DevelopedBy {
+	title: string
+	website: string
+}
+
 export interface FooterData {
 	footerAbout: FooterAbout
 	footerColumns: FooterColumn[]
 	subFooter: SubFooter
+	developedBy: DevelopedBy
 }
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'Quality Inn Center City',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'Quality Inn Center City is a 3-star hotel located in the heart of the city. We offer a range of services including free Wi-Fi, a 24-hour front desk, and a fitness center. Our hotel is perfect for business travelers and tourists alike.',
 		logo: {
 			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			alt: 'Qualitu Inn Center City Logo',
+			text: 'Quality Inn Center City'
 		}
 	},
 	footerColumns: [
@@ -106,6 +112,10 @@ export const footerNavigationData: FooterData = {
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© Quality Inn 2024.',
+	},
+	developedBy: {
+		title: 'Sole Point Tech Solution',
+		website: 'https://solepoint.in'
 	}
 }

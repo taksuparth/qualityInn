@@ -1,21 +1,21 @@
 ---
-// Highlights Section
+// Hotel Highlights Section
 // ------------
-// Description: A section with a multiple text and image rows.
+// Description: A section with a hotel highlight text and image rows.
 
 // Components
 // - UI
 import TextImage from '../basic/TextImage.astro'
 
 // Content
-import highlight01 from '../../../assets/highlights/highlight-01.svg'
-import highlight01mobile from '../../../assets/highlights/highlight-01-mobile.svg'
-import highlight02 from '../../../assets/highlights/highlight-02.svg'
-import highlight02mobile from '../../../assets/highlights/highlight-02-mobile.svg'
-import highlight03 from '../../../assets/highlights/highlight-03.svg'
-import highlight03mobile from '../../../assets/highlights/highlight-03-mobile.svg'
-import highlight04 from '../../../assets/highlights/highlight-04.svg'
-import highlight04mobile from '../../../assets/highlights/highlight-04-mobile.svg'
+import suiteRoom from '../../../assets/highlights/suite-room.jpg'
+import suiteRoomMobile from '../../../assets/highlights/suite-room.jpg'
+import lobby from '../../../assets/highlights/hotel-lobby.jpg'
+import lobbyMobile from '../../../assets/highlights/hotel-lobby.jpg'
+import oneQueenBed from '../../../assets/highlights/one-queen-bed.jpg'
+import oneQueenBedMobile from '../../../assets/highlights/one-queen-bed.jpg'
+import twoQueenBed from '../../../assets/highlights/one-queen-bed.jpg'
+import twoQueenBedMobile from '../../../assets/highlights/one-queen-bed.jpg'
 
 type HighlightBlock = {
 	title: string
@@ -28,40 +28,40 @@ type HighlightBlock = {
 }
 const highlightBlocks: HighlightBlock[] = [
 	{
-		title: 'Complete Project <strong>Visibility</strong>',
-		text: 'Gain complete visibility into your projects and tasks with our comprehensive dashboard. Easily track progress, deadlines, and team performance at a glance. Our dashboard offers real-time project tracking',
-		image: highlight01,
-		imageWidth: highlight01.width,
-		imageHeight: highlight01.height,
-		mobileImage: highlight01mobile,
-		imagePosition: 'right'
-	},
-	{
-		title: 'Advanced <strong>Automation</strong> Tools',
-		text: 'Automate repetitive tasks and streamline your workflow with our advanced automation tools. Save time and reduce errors by leveraging automated task assignments, workflow templates, and seamless integration with popular apps and services.',
-		image: highlight02,
-		mobileImage: highlight02mobile,
-		imageWidth: highlight02.width,
-		imageHeight: highlight02.height,
+		title: 'Hotel <strong>Lobby</strong>',
+		text: 'Our hotel lobby is designed to provide you with a warm and welcoming atmosphere. Enjoy our comfortable seating areas, complimentary coffee, and free wifi. Whether you are waiting for your room or just relaxing, our lobby is the perfect place to unwind.',
+		image: lobby,
+		imageWidth: lobby.width,
+		imageHeight: lobby.height,
+		mobileImage: lobbyMobile,
 		imagePosition: 'left'
 	},
 	{
-		title: '<strong>Effective</strong> Team Collaboration',
-		text: 'Enhance team communication and collaboration with our seamless tools. Keep everyone on the same page and ensure efficient project execution through real-time messaging, shared document editing, and task comments. ',
-		image: highlight03,
-		mobileImage: highlight03mobile,
-		imageWidth: highlight03.width,
-		imageHeight: highlight03.height,
+		title: 'Suite <strong>Room</strong>',
+		text: 'Our suite rooms are designed to provide you with the ultimate comfort and luxury. Enjoy spacious rooms with free wifi and continental breakfast. Whether you are traveling for business or leisure, our suite rooms are the perfect choice for your stay.',
+		image: suiteRoom,
+		imageWidth: suiteRoom.width,
+		imageHeight: suiteRoom.height,
+		mobileImage: suiteRoomMobile,
 		imagePosition: 'right'
 	},
 	{
-		title: 'Robust Data <strong>Security</strong>',
-		text: 'Protect your data with our robust security features. We prioritize your privacy and security to ensure that your information is always safe. With end-to-end encryption, role-based access control, and regular security audits.',
-		image: highlight04,
-		mobileImage: highlight04mobile,
-		imageWidth: highlight04.width,
-		imageHeight: highlight04.height,
+		title: 'One <strong>Queen</strong> Bed',
+		text: 'Our one queen bed rooms are designed to provide you with the ultimate comfort and relaxation. Enjoy a spacious room with free wifi and continental breakfast. Whether you are traveling for business or leisure, our one queen bed rooms are the perfect choice for your stay.',
+		image: oneQueenBed,
+		mobileImage: oneQueenBedMobile,
+		imageWidth: oneQueenBed.width,
+		imageHeight: oneQueenBed.height,
 		imagePosition: 'left'
+	},
+	{
+		title: '<strong>Two</strong> Queen Beds',
+		text: 'Our two queen bed rooms are designed to provide you with the ultimate comfort and relaxation. Enjoy a spacious room with free wifi and continental breakfast. Whether you are traveling for business or leisure, our two queen bed rooms are the perfect choice for your stay.',
+		image: twoQueenBed,
+		mobileImage: twoQueenBedMobile,
+		imageWidth: twoQueenBed.width,
+		imageHeight: twoQueenBed.height,
+		imagePosition: 'right'
 	}
 ]
 ---

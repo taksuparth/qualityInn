@@ -10,54 +10,35 @@ import CTA from '../components/blocks/CTA/BasicDark.astro'
 // Data
 import featuresData from '../data/json-files/featuresData.json'
 // - Feature Categories
-const featuresAnalytics = featuresData.filter((feature) => feature.category === 'Analytics')
-const featuresProductivity = featuresData.filter((feature) => feature.category === 'Productivity')
-const featuresSecurity = featuresData.filter((feature) => feature.category === 'Security')
-const featuresIntegrations = featuresData.filter((feature) => feature.category === 'Integrations')
-const featuresSupport = featuresData.filter((feature) => feature.category === 'Support')
+const rooms = featuresData.filter((feature) => feature.category === 'Rooms')
+const amenities = featuresData.filter((feature) => feature.category === 'Amenities')
 
 // Content
 // - SEO
 const SEO = {
-	title: 'Foxi | Features to Boost Productivity & Security',
+	title: 'Quality Inn Center City | Our Hotel Services',
 	description:
-		"Explore Foxi's powerful features designed to enhance productivity, ensure top-notch security, and integrate seamlessly with your favorite tools. Join thousands of satisfied users and transform your workflow with Foxi today!"
+		"Discover why you'll love Quality Inn Center City. Explore our hotel services and amenities that will make your stay unforgettable."
 }
 // - Page Header
 const header = {
-	title: 'Why you and your team will <strong>love</strong> foxi.',
-	text: 'Streamline your tasks, protect your data, and enjoy working with our tools!'
+	title: 'Why you will <strong>love your stay</strong> at Quality Inn Center City.',
+	text: 'Explore Our Hotel Services'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={header.title} text={header.text} />
 	<Feature
-		title="Insightful Analytics"
-		text="Delve into your data with precision and uncover actionable insights."
-		data={featuresAnalytics}
+		title="Rooms"
+		text="Quality Inn has a total of 45 Rooms in the heart of Philadelphia."
+		data={rooms}
 	/>
 	<Feature
-		title="Efficiency Unleashed"
-		text="Streamline tasks and focus on what matters with tools designed to boost your productivity."
-		data={featuresSecurity}
+		title="Amnetities"
+		text="Enjoy our top-notch amenities that will make your stay unforgettable."
+		data={amenities}
 		classes="bg-neutral-50 dark:bg-neutral-900"
-	/>
-	<Feature
-		title="Ultimate Data Protection"
-		text="Keep your data safe with top-notch security measures and real-time threat detection."
-		data={featuresProductivity}
-	/>
-	<Feature
-		title="Seamless Connectivity"
-		text="Effortlessly connect your favorite apps and automate workflows for a smoother workday."
-		data={featuresIntegrations}
-		classes="bg-neutral-50 dark:bg-neutral-900"
-	/>
-	<Feature
-		title="24/7 Expert Help"
-		text="Our friendly support team is always here to assist you with any questions or issues."
-		data={featuresSupport}
 	/>
 	<CTA />
 </Layout>

@@ -1,33 +1,33 @@
 [
 	{
-		"title": "Real-Time Analytics",
-		"icon": "chart-pie",
-		"description": "Gain valuable insights instantly with Foxi's real-time analytics. Track performance metrics, user behavior, and campaign effectiveness effortlessly.",
-		"category": "Analytics"
+		"title": "Cozy Rooms",
+		"icon": "key",
+		"description": "Indulge in comfort and relaxation with our cozy rooms. Enjoy a peaceful retreat with modern amenities and personalized service.",
+		"category": "Rooms"
 	},
 	{
-		"title": "Customizable Dashboards",
+		"title": "Smoke Free Environment",
 		"icon": "squares-plus",
-		"description": "Tailor your workspace with personalized dashboards that suit your workflow. Stay organized and focused on what matters most to your business.",
-		"category": "Analytics"
+		"description": "Breathe easy in our smoke-free environment. Enjoy a clean and healthy atmosphere throughout your stay with us.",
+		"category": "Rooms"
 	},
 	{
-		"title": "Task Management",
+		"title": "Suite Room",
 		"icon": "cliboard-document-check",
-		"description": "Efficiently manage tasks and projects with Foxi's intuitive task management tools. Assign, track progress, and collaborate seamlessly.",
-		"category": "Productivity"
+		"description": "Experience luxury and elegance in our suite rooms. Enjoy spacious accommodations, premium amenities, and personalized service.",
+		"category": "Rooms"
 	},
 	{
-		"title": "Third-Party Apps",
+		"title": "One Queen Bed",
 		"icon": "rocket",
-		"description": "Connect Foxi with your favorite tools and apps effortlessly. Streamline workflows and enhance productivity with seamless integrations.",
-		"category": "Productivity"
+		"description": "Relax and unwind in our rooms with one queen bed. Enjoy a comfortable stay with modern amenities and personalized service.",
+		"category": "Rooms"
 	},
 	{
-		"title": "Mobile Accessibility",
+		"title": "Two Queen Beds",
 		"icon": "device-phone-mobile",
-		"description": "Stay productive on the go with Foxi's mobile app. Access key features, collaborate with your team, and manage tasks anytime, anywhere.",
-		"category": "Support"
+		"description": "Stay comfortably in our rooms with two queen beds. Enjoy modern amenities, personalized service, and a relaxing atmosphere.",
+		"category": "Rooms"
 	},
 	{
 		"title": "Dedicated Customer Support",
@@ -36,28 +36,28 @@
 		"category": "Support"
 	},
 	{
-		"title": "Robust Data Security",
+		"title": "Free Wifi",
 		"icon": "shield-check",
-		"description": "Rest assured knowing your data is safe with Foxi's robust security measures. We employ industry-standard protocols to protect your information.",
-		"category": "Security"
+		"description": "Stay connected with complimentary high-speed wifi. Enjoy seamless internet access throughout our property for work or leisure.",
+		"category": "Amenities"
 	},
 	{
-		"title": "Scalability",
+		"title": "Parking",
 		"icon": "arrow-treding-up",
-		"description": "Grow your business with confidence using Foxi's scalable platform. Whether you're a startup or a large enterprise, our solution adapts to your needs.",
-		"category": "Security"
+		"description": "Convenient parking options available for guests. Park your vehicle with ease and enjoy hassle-free access to our facilities.",
+		"category": "Amenities"
 	},
 	{
-		"title": "Real-Time Notifications",
-		"icon": "bell-alert",
-		"description": "Stay updated with real-time notifications for important events and updates. Never miss out on critical information with instant alerts.",
-		"category": "Security"
+		"title": "Breakfast",
+		"icon": "arrow-treding-up",
+		"description": "Start your day with a delicious continental breakfast available from 7AM to 9AM",
+		"category": "Amenities"
 	},
 	{
-		"title": "Advanced Reporting",
+		"title": "100% Smoke Free Hotel",
 		"icon": "clipboard-document-list",
-		"description": "Generate detailed reports with advanced analytics features. Customize reports to track key performance indicators and gain deeper insights.",
-		"category": "Analytics"
+		"description": "Enjoy a smoke-free environment throughout our hotel. Breathe easy and relax in a clean, healthy atmosphere.",
+		"category": "Amenities"
 	},
 	{
 		"title": "Team Collaboration Tools",

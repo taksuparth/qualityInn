@@ -21,10 +21,9 @@ import Breadcrumbs from '../../../components/ui/Breadcrumbs.astro'
 type Props = {
 	tags?: any
 	title: string
-	author?: string
-	publishDate?: string
+	distance?: string
 }
-const { tags, title, author, publishDate } = Astro.props
+const { tags, title, distance } = Astro.props
 ---
 
 <Section id="post-intro" classes="bg-neutral-50 dark:bg-neutral-900">
@@ -35,15 +34,7 @@ const { tags, title, author, publishDate } = Astro.props
 				<h1 class="post-header__title">
 					{title}
 				</h1>
-				{
-					author ? (
-						<p class="page-header__text">
-							Written by, {author} {publishDate && 'on ' + publishDate}
-						</p>
-					) : (
-						publishDate && <p class="page-header__text">Published on, {publishDate}</p>
-					)
-				}
+				{distance ? <p class="page-header__text">{distance} Mile Away</p> : null}
 			</header>
 			{
 				tags && (

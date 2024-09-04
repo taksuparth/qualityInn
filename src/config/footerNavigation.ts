@@ -52,27 +52,23 @@ export const footerNavigationData: FooterData = {
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'Social Media',
 			subCategories: [
 				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategory: 'Facebook',
+					subCategoryLink: '/'
 				},
 				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
+					subCategory: 'Instagram',
+					subCategoryLink: '/'
 				},
 				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
+					subCategory: 'Twitter',
+					subCategoryLink: '/'
 				},
 				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
+					subCategory: 'LinkedIn',
+					subCategoryLink: '/'
 				}
 			]
 		},
@@ -80,15 +76,11 @@ export const footerNavigationData: FooterData = {
 			category: 'About us',
 			subCategories: [
 				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
+					subCategory: 'Our Hotel',
+					subCategoryLink: '/features'
 				},
 				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
-				},
-				{
-					subCategory: 'Careers',
+					subCategory: 'Places to visit',
 					subCategoryLink: '/blog'
 				}
 			]

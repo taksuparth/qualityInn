@@ -11,22 +11,13 @@ import BlogPostHero from '../components/blocks/blog/BlogPostHero.astro'
 // Content
 // - SEO
 const SEO = {
-	title: `${frontmatter.title} | Foxi`,
+	title: `${frontmatter.title} | Quality Inn Center City Blog`,
 	description: `${frontmatter.description}`
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-	<BlogPostHero
-		tags={frontmatter.tags}
-		title={frontmatter.title}
-		author={frontmatter.author}
-		publishDate={frontmatter.pubDate.toLocaleDateString('en-US', {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric'
-		})}
-	/>
+	<BlogPostHero tags={frontmatter.tags} title={frontmatter.title} distance={frontmatter.distance} />
 
 	<div class="post-body basic-text basic-text--lg">
 		<slot />

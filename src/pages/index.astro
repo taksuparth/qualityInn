@@ -10,12 +10,12 @@ import CTA from '../components/blocks/CTA/BasicDark.astro'
 
 // Content
 // - Testimonial background
-import testimonialBackground from '../assets/testimonial-bg-01.webp'
+import testimonialBackground from '../assets/cta-dark-bg.png'
 // - SEO
 const SEO = {
-	title: 'Foxi | Your Productivity Toolkit',
+	title: 'Quality Inn Center City | Home Page',
 	description:
-		'Foxi is a powerful productivity toolkit designed to enhance your workflow and boost your productivity. With features like analytics, security, and integrations, Foxi is the perfect solution for your business.'
+		'Stay at Quality Inn Center City in Philadelphia. The staff is welcoming, the rooms are clean and comfortable, and the location is perfect for exploring the city. Highly recommend for a convenient stay!'
 }
 ---
 
@@ -23,5 +23,5 @@ const SEO = {
 	<Hero />
 	<HighlightBlocks />
 	<CTA />
-	<Testimonial bg={testimonialBackground} bgPosition="right" />
+	<Testimonial bg={testimonialBackground} bgPosition="left" />
 </Layout>

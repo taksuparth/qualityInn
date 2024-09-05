@@ -21,17 +21,16 @@ type Props = {
 	classes?: string
 }
 const {
-	title = 'Foxi. Tailwind CSS Astro Starter Kit by Oxygenna',
-	text = 'Foxi is a design and development agency that specializes in creating beautiful and functional websites.',
+	title = 'Quality Inn Center City',
+	text = 'Explore place around quality inn center city. Find out the best places to visit, eat and shop in Philadelphia. Stay informed, stay productive. All the latest from the world of Foxi.',
 	open = false,
-	classes 
+	classes
 } = Astro.props
 ---
 
 <details
 	class:list={['accordion group', { [`${classes}`]: classes }]}
-	open={open ? true : undefined}
->
+	open={open ? true : undefined}>
 	<summary class="accordion__summary">
 		{title}
 		<Icon name="plus" class="accordion__icon" />

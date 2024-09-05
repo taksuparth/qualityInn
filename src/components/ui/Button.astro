@@ -23,6 +23,7 @@ type Props = {
 	variation?: 'outline' | 'link'
 	elevated?: boolean
 	classes?: string
+	onClick?: () => void
 }
 const {
 	type = 'button',
@@ -47,8 +48,7 @@ const {
 				{ ['button--' + `${variation}`]: variation },
 				{ ['button--elevated']: elevated },
 				{ [`${classes}`]: classes }
-			]}
-		>
+			]}>
 			<slot />
 		</a>
 	) : (
@@ -62,8 +62,7 @@ const {
 				{ ['button--elevated']: elevated },
 				{ [`${classes}`]: classes }
 			]}
-			{...(modal ? { 'data-modal': modal } : {})}
-		>
+			{...(modal ? { 'data-modal': modal } : {})}>
 			<slot />
 		</button>
 	)

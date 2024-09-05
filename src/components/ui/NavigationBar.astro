@@ -49,8 +49,7 @@ const savedNavActions = navActions.map((action) => ({
 				id="header-toggle"
 				class="header__toggle"
 				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
+				aria-label="Toggle navigation">
 				<div class="header__toggle-inner">
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
@@ -67,15 +66,13 @@ const savedNavActions = navActions.map((action) => ({
 								<a
 									href={item.link}
 									role="menuitem"
-									class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}
-								>
+									class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}>
 									{item.name}
 								</a>
 							) : (
 								<span
 									role="menuitem"
-									class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}
-								>
+									class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}>
 									{item.name}
 									<Icon name="chevron-down" class="header__menu-chevron" />
 								</span>
@@ -87,8 +84,7 @@ const savedNavActions = navActions.map((action) => ({
 											<a
 												href={subItem.link}
 												role="menuitem"
-												class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}
-											>
+												class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}>
 												{subItem.name}
 											</a>
 										</li>
@@ -106,8 +102,8 @@ const savedNavActions = navActions.map((action) => ({
 			<!-- Navigation action buttons -->
 			<div class="header__actions">
 				{
-					savedNavActions.map((action) => (
-						<Button classes="flex-auto" size={action.size} style={action.style} modal="signup">
+					savedNavActions.map((action, index) => (
+						<Button classes="flex-auto" size={action.size} style={action.style} data-action={index}>
 							{action.name}
 						</Button>
 					))
@@ -179,3 +175,15 @@ const savedNavActions = navActions.map((action) => ({
 		@apply fixed bottom-0 left-0 hidden w-full items-center justify-between gap-4 border-t border-neutral-100 bg-white px-6 py-4 lg:relative lg:ml-auto lg:flex lg:w-auto lg:border-none lg:bg-transparent lg:px-0 lg:py-0 dark:border-neutral-800 dark:bg-neutral-950 lg:dark:bg-transparent [.header\_\_menu--open~&]:flex;
 	}
 </style>
+<script>
+	// Select all buttons with the data attribute 'data-action'
+	const actionButtons = document.querySelectorAll('[data-action]')
+
+	actionButtons.forEach((button) => {
+		button.addEventListener('click', () => {
+			// Redirect to the specific URL
+			window.location.href =
+				'https://www.choicehotels.com/en-uk/pennsylvania/philadelphia/quality-inn-hotels/pa271?hotel=pa271&mc=frmlxxpx'
+		})
+	})
+</script>

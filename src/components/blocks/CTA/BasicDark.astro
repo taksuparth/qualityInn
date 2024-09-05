@@ -11,13 +11,9 @@ import Col from '../../ui/Col.astro'
 // - UI
 import CTA from '../../ui/CTA.astro'
 import Button from '../../ui/Button.astro'
-import ChipNotification from '../../ui/ChipNotification.astro'
-import { Image } from 'astro:assets'
-import Highlight from '../../ui/Highlight.astro'
 
 // Content
 import ctaImage from '../../../assets/cta-dark-bg.webp'
-import badge from '../../../assets/badge.svg'
 ---
 
 <Section>
@@ -29,10 +25,12 @@ import badge from '../../../assets/badge.svg'
 				text="Stay near the historic Liberty Bell in Philadelphia!"
 				mode="dark"
 				bg={ctaImage}>
-				<ChipNotification radius="rounded-full" classes="mb-6 box">
-					Book now and get <Highlight classes="ml-2">10% off</Highlight>
-				</ChipNotification>
-				<Button size="lg" style="primary"> Book Now! </Button>
+				<Button
+					size="lg"
+					style="primary"
+					link="https://www.choicehotels.com/en-uk/pennsylvania/philadelphia/quality-inn-hotels/pa271?hotel=pa271&mc=frmlxxpx">
+					Book Now!
+				</Button>
 			</CTA>
 			<Col span="1" />
 		</Col>

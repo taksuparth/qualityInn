@@ -103,7 +103,7 @@ const savedNavActions = navActions.map((action) => ({
 			<div class="header__actions">
 				{
 					savedNavActions.map((action, index) => (
-						<Button classes="flex-auto" size={action.size} style={action.style} data-action={index}>
+						<Button classes="flex-auto" size={action.size} style={action.style} link={action.link}>
 							{action.name}
 						</Button>
 					))
@@ -175,15 +175,3 @@ const savedNavActions = navActions.map((action) => ({
 		@apply fixed bottom-0 left-0 hidden w-full items-center justify-between gap-4 border-t border-neutral-100 bg-white px-6 py-4 lg:relative lg:ml-auto lg:flex lg:w-auto lg:border-none lg:bg-transparent lg:px-0 lg:py-0 dark:border-neutral-800 dark:bg-neutral-950 lg:dark:bg-transparent [.header\_\_menu--open~&]:flex;
 	}
 </style>
-<script>
-	// Select all buttons with the data attribute 'data-action'
-	const actionButtons = document.querySelectorAll('[data-action]')
-
-	actionButtons.forEach((button) => {
-		button.addEventListener('click', () => {
-			// Redirect to the specific URL
-			window.location.href =
-				'https://www.choicehotels.com/en-uk/pennsylvania/philadelphia/quality-inn-hotels/pa271?hotel=pa271&mc=frmlxxpx'
-		})
-	})
-</script>

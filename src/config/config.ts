@@ -24,7 +24,7 @@ export const configData: Config = {
 	siteTitle: 'Quality Inn Center City',
 	siteDescription:
 		'Quality Inn Center City is a 3-star hotel located in the heart of the city. We offer a range of services including free Wi-Fi, a 24-hour front desk, and a lot more. Our hotel is perfect for business travelers and tourists alike.',
-	ogImage: '/logo.png',
+	ogImage: '/og.png',
 	logo: {
 		src: '/logo.png',
 		alt: 'Quality Inn Center City Logo'

@@ -1,0 +1,1 @@
+export const zohoChatID = import.meta.env.ZOHO_CHAT_ID;

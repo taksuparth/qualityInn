@@ -8,6 +8,7 @@ import Header from '../components/blocks/head/Header.astro'
 // Scripts
 import Scriprs from '../components/scripts/LocalScripts.astro'
 import GoogleTagManagerBody from '../components/scripts/googleTagManagerBody.astro'
+import ZohoChatBot from '../components/scripts/zohoChatBot.astro'
 // Styles
 import '../styles/global.css'
 // Fonts
@@ -34,7 +35,8 @@ const { title, description, ogImage, noindex } = Astro.props
 		class:list={[
 			{ ['mode-' + `${configData.mode}`]: configData.mode },
 			{ ['scroll-animation']: configData.scrollAnimations }
-		]}>
+		]}
+	>
 		<GoogleTagManagerBody />
 		<NavigationBar />
 		<Main>
@@ -42,5 +44,6 @@ const { title, description, ogImage, noindex } = Astro.props
 		</Main>
 		<Footer />
 		<Scriprs />
+		<ZohoChatBot />
 	</body>
 </html>

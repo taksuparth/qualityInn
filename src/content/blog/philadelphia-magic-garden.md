@@ -2,7 +2,7 @@
 title: "Philadelphia's Magic Gardens"
 description: "Explore the Enchanting Philadelphia's Magic Gardens, Just a Short Walk from Quality Inn Center City"
 distance: '0.2'
-image: '/blog/philadelphias-magic-gardens.jpg'
+image: '/blog/philadelphias-magic-gardens.jfif'
 tags: ['ExplorePhilly', 'ArtInstallation', 'MosaicArt', 'HiddenGem', 'PhiladelphiaLandmarks']
 
 ---

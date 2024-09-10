@@ -1,0 +1,12 @@
+---
+// Zoho Chat script ID
+import { zohoChatID } from '../../../src/config/zohoChat.ts'
+---
+
+<!-- Zoho Chat -->
+<script is:inline>
+	window.$zoho = window.$zoho || {}
+	$zoho.salesiq = $zoho.salesiq || { ready: function () {} }
+</script><script id="zsiqscript" src={`https://salesiq.zohopublic.in/widget?wc=${zohoChatID}`} defer is:inline
+></script>
+<!-- End Zoho Chat -->

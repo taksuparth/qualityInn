@@ -56,19 +56,11 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Facebook',
-					subCategoryLink: '/'
+					subCategoryLink: 'https://www.facebook.com/qualityinnphiladelphia'
 				},
 				{
 					subCategory: 'Instagram',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'Twitter',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'LinkedIn',
-					subCategoryLink: '/'
+					subCategoryLink: 'https://www.instagram.com/qualityinnphiladelphia'
 				}
 			]
 		},

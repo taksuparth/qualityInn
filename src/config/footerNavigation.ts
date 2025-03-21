@@ -41,9 +41,9 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Quality Inn Center City',
+		title: 'Quality Inn Center City - Philadelphia',
 		aboutText:
-			'Quality Inn Center City is a 3-star hotel located in the heart of the city. We offer a range of services including free Wi-Fi, a 24-hour front desk, and a fitness center. Our hotel is perfect for business travelers and tourists alike.',
+			'Quality Inn Center City, Philadelphia is a 3-star hotel located in the heart of the city. We offer a range of services including free Wi-Fi, a 24-hour front desk, and a fitness center. Our hotel is perfect for business travelers and tourists alike.',
 		logo: {
 			src: '/logo.svg',
 			alt: 'Qualitu Inn Center City Logo',

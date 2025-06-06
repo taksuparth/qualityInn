@@ -41,6 +41,7 @@ const {
 		<a
 			href={link}
 			target="_blank"
+			onclick={`gtag_report_conversion('${link}'); return false;`}
 			class:list={[
 				'button',
 				{ ['button--' + `${size}`]: size },

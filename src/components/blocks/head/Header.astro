@@ -33,22 +33,6 @@ const {
 <head>
 	{googleAnalyticsMeasurementID && <GoogleAnalytics />}
 	{googleTagManagerID && <GoogleTagManagerHead />}
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17151002307/xR2TCJ6ostQaEMONnvI_',
-      'value': 1.0,
-      'currency': 'USD',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
 	<GoogleSearchConsole />
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />

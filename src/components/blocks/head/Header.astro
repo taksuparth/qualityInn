@@ -49,25 +49,4 @@ const {
 	<meta name="generator" content={Astro.generator} />
 	<meta name="theme-color" content="#134e4a" />
 	<ViewTransitions fallback="swap" />
-	<script type="text/partytown">
-		window.gtag_report_conversion = function (url) {
-			var callback = function () {
-				if (typeof url !== 'undefined') {
-					window.location = url
-				}
-			}
-			if (typeof gtag === 'function') {
-				gtag('event', 'conversion', {
-					send_to: 'AW-17151002307/cFLwCPyQuNQaEMONnvI_',
-					value: 1.0,
-					currency: 'USD',
-					event_callback: callback
-				})
-			} else {
-				console.warn('gtag is not defined')
-				callback() // fallback redirect
-			}
-			return false
-		}
-	</script>
 </head>

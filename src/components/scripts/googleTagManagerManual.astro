@@ -13,5 +13,25 @@
 	gtag('config', 'AW-17151002307')
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17151002307"></script>
-
+<script type="text/partytown">
+	window.gtag_report_conversion = function (url) {
+		var callback = function () {
+			if (typeof url !== 'undefined') {
+				window.location = url
+			}
+		}
+		if (typeof gtag === 'function') {
+			gtag('event', 'conversion', {
+				send_to: 'AW-17151002307/cFLwCPyQuNQaEMONnvI_',
+				value: 1.0,
+				currency: 'USD',
+				event_callback: callback
+			})
+		} else {
+			console.warn('gtag is not defined')
+			callback() // fallback redirect
+		}
+		return false
+	}
+</script>
 <!-- End Google Tag Manager -->

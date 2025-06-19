@@ -41,7 +41,7 @@ const {
 		<a
 			href={link}
 			target="_blank"
-			onclick={`gtag_report_conversion('${link}'); return false;`}
+			onclick={`gtag_report_conversion('${link}');`}
 			class:list={[
 				'button',
 				{ ['button--' + `${size}`]: size },
@@ -49,7 +49,8 @@ const {
 				{ ['button--' + `${variation}`]: variation },
 				{ ['button--elevated']: elevated },
 				{ [`${classes}`]: classes }
-			]}>
+			]}
+		>
 			<slot />
 		</a>
 	) : (
@@ -63,7 +64,8 @@ const {
 				{ ['button--elevated']: elevated },
 				{ [`${classes}`]: classes }
 			]}
-			{...(modal ? { 'data-modal': modal } : {})}>
+			{...(modal ? { 'data-modal': modal } : {})}
+		>
 			<slot />
 		</button>
 	)

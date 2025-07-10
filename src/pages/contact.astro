@@ -1,21 +1,15 @@
 ---
-// Components
-// - Layout
 import Layout from '../layouts/Layout.astro'
-// - UI
 import FormHero from '../components/blocks/hero/ContactHero.astro'
 import CTA from '../components/blocks/CTA/BasicDark.astro'
-import ContactCards from '../components/blocks/contact/ContactCards.astro'
-import SocialProof from '../components/blocks/socialproof/Basic.astro'
 
 // Content
-// - SEO
 const SEO = {
 	title: 'Qualtiy Inn Center City | Get in Touch with Us',
 	description:
 		'Contact Qualtiy Inn Center City if you have any questions, need support, or just want to share your feedback. We are here to help you with all your queries.'
 }
-// - Page Header
+
 const header = {
 	title: 'Get Answers to Your <strong>Questions.</strong>',
 	text: "Whether you have a question, need support, or just want to share your feedback, we're all ears. Reach out to us and we'll get back to you as soon as possible."
@@ -29,6 +23,23 @@ const header = {
 		id="contact"
 		classes="bg-neutral-50 dark:bg-neutral-950/80"
 	/>
-	<!-- <SocialProof classes="dark:bg-neutral-950/80" /> -->
+
+	<!-- Hotel Address & Call Button Section -->
+	<section class="bg-white py-12 dark:bg-neutral-900">
+		<div class="mx-auto max-w-4xl px-4 text-center">
+			<h2 class="text-2xl font-semibold text-neutral-800 dark:text-white">Visit or Call Us</h2>
+			<p class="mt-4 text-neutral-600 dark:text-neutral-300">
+				1208 Walnut Street,<br />
+				Philadelphia, PA 19107<br />
+				United States
+			</p>
+			<a
+				href="tel:+12159950167"
+				class="mt-6 inline-block rounded-md bg-primary-600 px-6 py-3 font-medium text-white transition hover:bg-primary-700">
+				Call Now: (215) 995-0167
+			</a>
+		</div>
+	</section>
+
 	<CTA />
 </Layout>

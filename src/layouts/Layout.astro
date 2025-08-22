@@ -24,9 +24,10 @@ type Props = {
 	description?: string
 	ogImage?: string
 	noindex?: boolean
+	showMenu?: boolean
 }
 // Page Metadata
-const { title, description, ogImage, noindex } = Astro.props
+const { title, description, ogImage, noindex, showMenu } = Astro.props
 ---
 
 <!doctype html>
@@ -40,12 +41,12 @@ const { title, description, ogImage, noindex } = Astro.props
 	>
 		<GoogleTagManagerBody />
 		<!-- <GoogleTagManagerManual /> -->
-		<NavigationBar />
+		<NavigationBar showMenu={showMenu} />
 		<Main>
 			<slot />
 		</Main>
-		<Footer />
+		{showMenu && <Footer />}
 		<Scriprs />
-		<ZohoChatBot />
+		{showMenu && <ZohoChatBot />}
 	</body>
 </html>

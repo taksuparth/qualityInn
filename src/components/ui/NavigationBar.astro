@@ -33,6 +33,12 @@ const savedNavActions = navActions.map((action) => ({
 	size: action.size as 'base' | 'lg' | 'sm',
 	style: action.style as 'primary' | 'secondary' | 'neutral'
 }))
+
+type props = {
+	showMenu?: boolean
+}
+
+const { showMenu = true } = Astro.props
 ---
 
 <header class="header">
@@ -44,78 +50,93 @@ const savedNavActions = navActions.map((action) => ({
 				<span class="text-center">{logo.text}<br /><small>Center City</small></span>
 			</a>
 
-			<!-- Menu toggle -->
-			<button
-				id="header-toggle"
-				class="header__toggle"
-				aria-expanded="false"
-				aria-label="Toggle navigation">
-				<div class="header__toggle-inner">
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-				</div>
-			</button>
+			{
+				showMenu && (
+					<>
+						{/* Menu toggle */}
+						<button
+							id="header-toggle"
+							class="header__toggle"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<div class="header__toggle-inner">
+								<span aria-hidden="true" />
+								<span aria-hidden="true" />
+								<span aria-hidden="true" />
+							</div>
+						</button>
 
-			<!-- Navigation links -->
-			<ul role="menubar" aria-label="Select page" class="header__menu">
-				{
-					navItems.map((item) => (
-						<li role="none" class="header__menu-item">
-							{!item.submenu ? (
-								<a
-									href={item.link}
-									role="menuitem"
-									class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}>
-									{item.name}
-								</a>
-							) : (
-								<span
-									role="menuitem"
-									class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}>
-									{item.name}
-									<Icon name="chevron-down" class="header__menu-chevron" />
-								</span>
-							)}
-							{item.submenu && (
-								<ul class="header__submenu">
-									{item.submenu.map((subItem) => (
-										<li role="none" class="header__submenu-item">
-											<a
-												href={subItem.link}
+						{/* Navigation links */}
+						<ul role="menubar" aria-label="Select page" class="header__menu">
+							{navItems.map((item) => (
+								<li role="none" class="header__menu-item" key={item.link}>
+									{!item.submenu ? (
+										<a
+											href={item.link}
+											role="menuitem"
+											class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}
+										>
+											{item.name}
+										</a>
+									) : (
+										<>
+											<span
 												role="menuitem"
-												class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}>
-												{subItem.name}
-											</a>
-										</li>
-									))}
-								</ul>
-							)}
-						</li>
-					))
-				}
-			</ul>
+												class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}
+											>
+												{item.name}
+												<Icon name="chevron-down" class="header__menu-chevron" />
+											</span>
 
-			<!-- Theme Switcher -->
-			<Switcher />
+											<ul class="header__submenu">
+												{item.submenu.map((subItem) => (
+													<li role="none" class="header__submenu-item" key={subItem.link}>
+														<a
+															href={subItem.link}
+															role="menuitem"
+															class={`header__menu-link ${isActivePath(subItem.link) ? 'active' : ''}`}
+														>
+															{subItem.name}
+														</a>
+													</li>
+												))}
+											</ul>
+										</>
+									)}
+								</li>
+							))}
+						</ul>
 
-			<!-- Navigation action buttons -->
-			<div class="header__actions">
-				{
-					savedNavActions.map((action, index) => (
-						<Button classes="flex-auto" size={action.size} style={action.style} link={action.link}>
-							{action.name}
-						</Button>
-					))
-				}
-			</div>
-			<!-- Call button for mobile devices -->
-			<a
-				href="tel:+12155467000"
-				class="fixed bottom-20 right-4 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-primary-500 text-center text-white shadow-lg transition hover:bg-primary-600 focus:outline-none lg:hidden"
-				aria-label="Call +1 (215) 546-7000">
-				Call Now
-			</a>
+						{/* Theme Switcher */}
+						<Switcher />
+
+						{/* Navigation action buttons */}
+						<div class="header__actions">
+							{savedNavActions.map((action, index) => (
+								<Button
+									key={index}
+									classes="flex-auto"
+									size={action.size}
+									style={action.style}
+									link={action.link}
+								>
+									{action.name}
+								</Button>
+							))}
+						</div>
+
+						{/* Call button for mobile devices */}
+						<a
+							href="tel:+12155467000"
+							class="fixed bottom-20 right-4 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-primary-500 text-center text-white shadow-lg transition hover:bg-primary-600 focus:outline-none lg:hidden"
+							aria-label="Call +1 (215) 546-7000"
+						>
+							Call Now
+						</a>
+					</>
+				)
+			}
 		</nav>
 	</div>
 </header>

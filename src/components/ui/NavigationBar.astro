@@ -70,7 +70,7 @@ const { showMenu = true } = Astro.props
 						{/* Navigation links */}
 						<ul role="menubar" aria-label="Select page" class="header__menu">
 							{navItems.map((item) => (
-								<li role="none" class="header__menu-item" key={item.link}>
+								<li role="none" class="header__menu-item">
 									{!item.submenu ? (
 										<a
 											href={item.link}
@@ -91,7 +91,7 @@ const { showMenu = true } = Astro.props
 
 											<ul class="header__submenu">
 												{item.submenu.map((subItem) => (
-													<li role="none" class="header__submenu-item" key={subItem.link}>
+													<li role="none" class="header__submenu-item">
 														<a
 															href={subItem.link}
 															role="menuitem"
@@ -115,7 +115,6 @@ const { showMenu = true } = Astro.props
 						<div class="header__actions">
 							{savedNavActions.map((action, index) => (
 								<Button
-									key={index}
 									classes="flex-auto"
 									size={action.size}
 									style={action.style}

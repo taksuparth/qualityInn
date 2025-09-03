@@ -54,5 +54,5 @@ export const navigationBarData: NavData = {
 		// },
 		{ name: 'Contact', link: '/contact' }
 	],
-	navActions: [{ name: 'Book Now', link: 'https://www.choicehotels.com/en-uk/pennsylvania/philadelphia/quality-inn-hotels/pa271?hotel=pa271&mc=frmlxxpx', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Book Now', link: 'http://www.choicehotels.com/ires/en-US/html/ArrivalInfo?hotel=PA271&srp=LADVST&pu=no', style: 'primary', size: 'lg' }]
 }
